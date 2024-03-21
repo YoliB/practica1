@@ -2,17 +2,7 @@ package practica1;
 
 import java.util.Scanner;
 
-/**
- * La clase `notas` representa un sistema para calcular la nota final de un estudiante
- * basado en tres unidades formativas y sus acumulados.
- *
- * @author Yolanda Bernárdez
- */
 
-/**
- * Nota de la primera unidad formativa.
- * @param uf1 La nota de la primera unidad formativa.
- */
 
 public class notas {
 	
@@ -20,22 +10,13 @@ public class notas {
 	almacenar las notas de las unidades formativas y los acumulados.*/
 	
 	double uf1;
-	/**
-	 * Nota de la primera unidad formativa.
-	 * @param uf1 La nota de la primera unidad formativa.
-	 */
+	
 	
 	double uf2;
-	/**
-	 * Nota de la segunda unidad formativa.
-	 * @param uf2 La nota de la segunda unidad formativa.
-	 */
+	
 	
 	double uf3;
-	/**
-	 * Nota de la tercera unidad formativa.
-	 * @param uf3 La nota de la tercera unidad formativa.
-	 */
+	
 	
 	double acu1, acu2, acu3, def; // Acumulados y nota final.
 	
@@ -46,12 +27,6 @@ public class notas {
 	
 	// Método para ingresar las notas del estudiante.
 	
-	/**
-     * Ingresa las notas del estudiante por teclado.
-     *
-     * @method
-     * Pide al usuario que introduzca las notas de las tres unidades formativas.
-     */
 	
 	public void IngresaNotas() {
 	
@@ -72,12 +47,6 @@ public class notas {
 	
 	// Método para comprobar la correcta introducción de las notas
 	
-	/**
-     * Comprueba si las notas introducidas son inferiores a 10).
-     *
-     * @method
-     * Muestra un mensaje de error si alguna nota no es válida.
-     */
 	
 	public void comprobacion(){
 		
@@ -104,9 +73,6 @@ public class notas {
 	
 	// Método para calcular los acumulados y la nota definitiva.
 	
-	/**
-     * @method Calcula los acumulados y la nota definitiva del estudiante.
-     */
 	
 	public void Calculonotas() {
 		acu1= uf1*0.35;
@@ -116,10 +82,6 @@ public class notas {
 		def = acu1 + acu2+ acu3;
 	}
 	
-	/**
-	 * Muestra las notas introducidas, los acumulados y la nota definitiva.
-	 * @return Un mensaje indicando la nota definitiva.
-	 */
 	
 	public void Mostrar() {
 		
@@ -136,11 +98,6 @@ public class notas {
 	}
 
 	
-	/**
-	 * Determina si el estudiante aprobó o suspendió.
-	 * @return `true` si el estudiante aprobó, `false` si no.
-	 */
-	
 	public void aprobado() {
 
 			if(def<5 && def>=0) {
@@ -154,12 +111,6 @@ public class notas {
 			}
 		}
 		
-	/**
-	 * Método principal que instancia un objeto de la clase `notas` y realiza los cálculos
-	 * necesarios.
-	 *
-	 * @param args Los argumentos de la línea de comandos (no se utilizan en este caso).
-	 */
 		
 	public static void main(String[] args) {
 		// creamos mecanimos para llamar a cualquier metodo fuero de la clase
